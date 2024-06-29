@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Árbol Binario de Búsqueda";
+}
+
+<h2>Árbol Binario de Búsqueda</h2>
+
+<div>
+    <h3>Insertar Datos</h3>
+    <form action="/Arbol/Insertar" method="post">
+        Fecha: <input type="date" name="fecha" required />
+        Matricula: <input type="text" name="matricula" required />
+        Asistencia: <input type="text" name="asistencia" required />
+        <input type="submit" value="Insertar" />
+    </form>
+</div>
+
+<div>
+    <h3>Buscar Datos</h3>
+    <form action="/Arbol/Buscar" method="post">
+        Fecha: <input type="date" name="fecha" required />
+        <input type="submit" value="Buscar" />
+    </form>
+    @if (ViewBag.Resultado != null)
+    {
+        <p>@ViewBag.Resultado</p>
+        ViewBag.Resultado = null; // Limpiar el resultado después de mostrarlo
+    }
+</div>
+
+<div>
+    <h3>Eliminar Datos</h3>
+    <form action="/Arbol/Eliminar" method="post">
+        Fecha: <input type="date" name="fecha" required />
+        <input type="submit" value="Eliminar" />
+    </form>
+    @if (ViewBag.Mensaje != null)
+    {
+        <p>@ViewBag.Mensaje</p>
+        ViewBag.Mensaje = null; // Limpiar el mensaje después de mostrarlo
+    }
+</div>
+
+<div>
+    <h3>Balancear Árbol</h3>
+    <form action="/Arbol/Balancear" method="post">
+        <input type="submit" value="Balancear" />
+    </form>
+</div>
+
+<div>
+    <h3>Visualización del Árbol</h3>
+    <canvas id="arbolCanvas" width="800" height="600"></canvas>
+</div>
+
+@section Scripts {
+    <script>
+        function dibujarArbol() {
+            fetch('/Arbol/ObtenerArbol')
+                .then(response => response.json())
+                .then(data => {
+                    var canvas = document.getElementById('arbolCanvas');
+                    var ctx = canvas.getContext('2d');
+                    ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas
+                    if (data) {
+                        dibujarNodo(ctx, data, canvas.width / 2, 40, canvas.width / 4);
+                    }
+                });
+        }
+
+        function dibujarNodo(ctx, nodo, x, y, offset) {
+            if (nodo === null) return;
+
+            // Dibujar el nodo
+            ctx.beginPath();
+            ctx.arc(x, y, 20, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'lightblue';
+            ctx.fill();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = 'black';
+            ctx.stroke();
+
+            // Dibujar el texto
+            ctx.fillStyle = 'black';
+            ctx.textAlign = 'center';
+            ctx.fillText(`Fecha: ${new Date(nodo.valor.Fecha).toLocaleDateString()}`, x, y - 10);
+            ctx.fillText(`Matricula: ${nodo.valor.Matricula}`, x, y + 5);
+            ctx.fillText(`Asistencia: ${nodo.valor.Asistencia}`, x, y + 20);
+
+            // Conectar con los nodos hijos
+            if (nodo.izquierdo) {
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x - offset, y + 60);
+                ctx.stroke();
+                dibujarNodo(ctx, nodo.izquierdo, x - offset, y + 60, offset / 2);
+            }
+
+            if (nodo.derecho) {
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x + offset, y + 60);
+                ctx.stroke();
+                dibujarNodo(ctx, nodo.derecho, x + offset, y + 60, offset / 2);
+            }
+        }
+
+        window.onload = dibujarArbol;
+    </script>
+}
+

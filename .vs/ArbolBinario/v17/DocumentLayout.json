@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ArbolBinario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\views\\arbol\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\views\\arbol\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\controllers\\arbolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\controllers\\arbolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\models\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\models\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F62AB6-01D0-49E2-947F-4B5096B2E090}|BinarySearchTreeLibrary\\BinarySearchTreeLibrary.csproj|C:\\ArbolBinario\\binarysearchtreelibrary\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F62AB6-01D0-49E2-947F-4B5096B2E090}|BinarySearchTreeLibrary\\BinarySearchTreeLibrary.csproj|solutionrelative:binarysearchtreelibrary\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F62AB6-01D0-49E2-947F-4B5096B2E090}|BinarySearchTreeLibrary\\BinarySearchTreeLibrary.csproj|C:\\ArbolBinario\\binarysearchtreelibrary\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F62AB6-01D0-49E2-947F-4B5096B2E090}|BinarySearchTreeLibrary\\BinarySearchTreeLibrary.csproj|solutionrelative:binarysearchtreelibrary\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3db98ce8-14f0-4b05-9b6a-b9dbe8fa94ab}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d4d7b63-2712-49a6-a309-3ff689de5696}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b38c6cbc-524d-4f30-8a18-936e3104b734}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:275484497:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\Views\\Arbol\\Index.cshtml",
+              "RelativeDocumentMoniker": "BSTWebApp\\Views\\Arbol\\Index.cshtml",
+              "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\Views\\Arbol\\Index.cshtml",
+              "RelativeToolTip": "BSTWebApp\\Views\\Arbol\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T02:12:46.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArbolController.cs",
+              "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\Controllers\\ArbolController.cs",
+              "RelativeDocumentMoniker": "BSTWebApp\\Controllers\\ArbolController.cs",
+              "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\Controllers\\ArbolController.cs",
+              "RelativeToolTip": "BSTWebApp\\Controllers\\ArbolController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:11:56.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BST.cs",
+              "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\Models\\BST.cs",
+              "RelativeDocumentMoniker": "BSTWebApp\\Models\\BST.cs",
+              "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\Models\\BST.cs",
+              "RelativeToolTip": "BSTWebApp\\Models\\BST.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:11:00.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Nodo.cs",
+              "DocumentMoniker": "C:\\ArbolBinario\\BinarySearchTreeLibrary\\Nodo.cs",
+              "RelativeDocumentMoniker": "BinarySearchTreeLibrary\\Nodo.cs",
+              "ToolTip": "C:\\ArbolBinario\\BinarySearchTreeLibrary\\Nodo.cs",
+              "RelativeToolTip": "BinarySearchTreeLibrary\\Nodo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:07:00.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BinarySearchTree.cs",
+              "DocumentMoniker": "C:\\ArbolBinario\\BinarySearchTreeLibrary\\BinarySearchTree.cs",
+              "RelativeDocumentMoniker": "BinarySearchTreeLibrary\\BinarySearchTree.cs",
+              "ToolTip": "C:\\ArbolBinario\\BinarySearchTreeLibrary\\BinarySearchTree.cs",
+              "RelativeToolTip": "BinarySearchTreeLibrary\\BinarySearchTree.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:05:41.511Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
