@@ -1,56 +1,153 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Árbol Binario de Búsqueda";
 }
 
-<h2>Árbol Binario de Búsqueda</h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<br />
+<h2 class="text-center">ÁRBOL BINARIO DE BÚSQUEDA</h2>
+<br />
 
-<div>
-    <h3>Insertar Datos</h3>
-    <form action="/Arbol/Insertar" method="post">
-        Fecha: <input type="date" name="fecha" required />
-        Matricula: <input type="text" name="matricula" required />
-        Asistencia: <input type="text" name="asistencia" required />
-        <input type="submit" value="Insertar" />
-    </form>
+<div class="msg-container">
+    <input type="text" id="mensajeAccion" class="msg" readonly value="@ViewBag.Mensaje" />
+</div>
+<br />
+@if (ViewBag.DatosMatricula != null)
+{
+    <h5 class="text-center">DATOS DE LA MÁTRICULA:</h5>
+    <br />
+    <div id="datosMatricula" class="msg-container">
+        <input type="text" class="msg" value="Matrícula: @ViewBag.DatosMatricula.Matricula, Fecha: @ViewBag.DatosMatricula.Fecha.ToShortDateString(), Asistencia: @Html.Raw(ViewBag.DatosMatricula.Asistencia ? "True" : "False")" readonly />
+    </div>
+}
+
+@if (ViewBag.MinMaxValue != null)
+{
+    <h5 class="text-center">@ViewBag.MinMaxTitle:</h5>
+    <br />
+    <div id="minMax" class="msg-container">
+        <input type="text" class="msg" value="@ViewBag.MinMaxValue" readonly />
+    </div>
+}
+
+<div class="justify-content-center">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>INSERTAR DATOS</h4>
+            <form action="/Arbol/Insertar" method="post">
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha" required />
+                </div>
+                <div class="form-group">
+                    <label for="matricula">Matricula:</label>
+                    <input type="text" class="form-control" id="matricula" name="matricula" required />
+                </div>
+                <div class="form-group">
+                    <label for="asistencia">Asistencia:</label>
+                    <select class="form-control" id="asistencia" name="asistencia" required>
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Insertar</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h4>RECORRIDOS</h4>
+            @if (ViewBag.Records != null)
+            {
+                <div id="recorridos">
+                    <div class="form-group">
+                        <label for="inOrden">InOrden:</label>
+                        <select class="form-control" id="inOrden" name="inOrden">
+                            @foreach (var item in ViewBag.Records["InOrden"])
+                            {
+                                <option>@item</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preOrden">PreOrden:</label>
+                        <select class="form-control" id="preOrden" name="preOrden">
+                            @foreach (var item in ViewBag.Records["PreOrden"])
+                            {
+                                <option>@item</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="postOrden">PostOrden:</label>
+                        <select class="form-control" id="postOrden" name="postOrden">
+                            @foreach (var item in ViewBag.Records["PostOrden"])
+                            {
+                                <option>@item</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="porNiveles">Por Niveles:</label>
+                        <select class="form-control" id="porNiveles" name="porNiveles">
+                            @foreach (var item in ViewBag.Records["Por Niveles"])
+                            {
+                                <option>@item</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>BUSCAR DATOS POR MATRÍCULA</h4>
+            <form action="/Arbol/Buscar" method="post">
+                <div class="form-group">
+                    <label for="matriculaBuscar">Matricula:</label>
+                    <input type="text" class="form-control" id="matriculaBuscar" name="matricula" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h4>ELIMINAR DATOS POR MATRÍCULA</h4>
+            <form action="/Arbol/Eliminar" method="post">
+                <div class="form-group">
+                    <label for="matriculaEliminar">Matricula:</label>
+                    <input type="text" class="form-control" id="matriculaEliminar" name="matricula" required />
+                </div>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <h4>OBTENER MÍNIMO Y MÁXIMO</h4>
+            <form action="/Arbol/ObtenerMinimo" method="post">
+                <button type="submit" class="btn btn-success">Obtener Mínimo</button>
+            </form>
+            <br />
+            <form action="/Arbol/ObtenerMaximo" method="post">
+                <button type="submit" class="btn btn-success">Obtener Máximo</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h4>BALANCEAR ÁRBOL</h4>
+            <form action="/Arbol/Balancear" method="post">
+                <button type="submit" class="btn btn-secondary">Balancear</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <div>
-    <h3>Buscar Datos</h3>
-    <form action="/Arbol/Buscar" method="post">
-        Fecha: <input type="date" name="fecha" required />
-        <input type="submit" value="Buscar" />
-    </form>
-    @if (ViewBag.Resultado != null)
-    {
-        <p>@ViewBag.Resultado</p>
-        ViewBag.Resultado = null; // Limpiar el resultado después de mostrarlo
-    }
-</div>
-
-<div>
-    <h3>Eliminar Datos</h3>
-    <form action="/Arbol/Eliminar" method="post">
-        Fecha: <input type="date" name="fecha" required />
-        <input type="submit" value="Eliminar" />
-    </form>
-    @if (ViewBag.Mensaje != null)
-    {
-        <p>@ViewBag.Mensaje</p>
-        ViewBag.Mensaje = null; // Limpiar el mensaje después de mostrarlo
-    }
-</div>
-
-<div>
-    <h3>Balancear Árbol</h3>
-    <form action="/Arbol/Balancear" method="post">
-        <input type="submit" value="Balancear" />
-    </form>
-</div>
-
-<div>
-    <h3>Visualización del Árbol</h3>
-    <canvas id="arbolCanvas" width="800" height="600"></canvas>
+    <h3 class="text-center">REPRESENTACIÓN GRÁFICA</h3>
+    <br />
+    <canvas id="arbolCanvas" width="1120" height="800" class="border border-dark"></canvas>
 </div>
 
 @section Scripts {
@@ -61,9 +158,9 @@
                 .then(data => {
                     var canvas = document.getElementById('arbolCanvas');
                     var ctx = canvas.getContext('2d');
-                    ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
                     if (data) {
-                        dibujarNodo(ctx, data, canvas.width / 2, 40, canvas.width / 4);
+                        dibujarNodo(ctx, data, canvas.width / 2, 80, canvas.width / 4);
                     }
                 });
         }
@@ -71,41 +168,78 @@
         function dibujarNodo(ctx, nodo, x, y, offset) {
             if (nodo === null) return;
 
-            // Dibujar el nodo
+            // Ajustar el tamaño del círculo al contenido
+            const textWidth = Math.max(
+                ctx.measureText(`Fecha: ${new Date(nodo.valor.Fecha).toLocaleDateString('es-ES', { year: 'numeric', month: '2-digit', day: '2-digit' })}`).width,
+                ctx.measureText(`Matricula: ${nodo.valor.Matricula}`).width,
+                ctx.measureText(`Asistencia: ${nodo.valor.Asistencia}`).width
+            );
+            const circleRadius = Math.max(60, textWidth / 2 + 10);
             ctx.beginPath();
-            ctx.arc(x, y, 20, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'lightblue';
+            ctx.arc(x, y, circleRadius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'white';
             ctx.fill();
             ctx.lineWidth = 2;
             ctx.strokeStyle = 'black';
             ctx.stroke();
 
-            // Dibujar el texto
-            ctx.fillStyle = 'black';
+
+
+
+            // Dibujar texto
             ctx.textAlign = 'center';
-            ctx.fillText(`Fecha: ${new Date(nodo.valor.Fecha).toLocaleDateString()}`, x, y - 10);
-            ctx.fillText(`Matricula: ${nodo.valor.Matricula}`, x, y + 5);
-            ctx.fillText(`Asistencia: ${nodo.valor.Asistencia}`, x, y + 20);
+            ctx.fillStyle = 'black';
+            ctx.fillText(`Fecha: ${new Date(nodo.valor.Fecha).toLocaleDateString('es-ES', { year: 'numeric', month: '2-digit', day: '2-digit' })}`, x, y - 20);
+            ctx.fillText(`Matricula: ${nodo.valor.Matricula}`, x, y);
+
+            // Dibujar la palabra Asistencia en color correspondiente
+            ctx.fillStyle = 'black';
+            ctx.fillText('Asistencia:', x, y + 20);
+            ctx.fillStyle = nodo.valor.Asistencia === "True" ? 'green' : 'red';
+            ctx.fillText(`${nodo.valor.Asistencia}`, x, y + 40);
 
             // Conectar con los nodos hijos
             if (nodo.izquierdo) {
                 ctx.beginPath();
-                ctx.moveTo(x, y);
-                ctx.lineTo(x - offset, y + 60);
+                ctx.moveTo(x, y + circleRadius);
+                ctx.lineTo(x - offset, y + 100);
                 ctx.stroke();
-                dibujarNodo(ctx, nodo.izquierdo, x - offset, y + 60, offset / 2);
+                dibujarNodo(ctx, nodo.izquierdo, x - offset, y + 100, offset / 2);
             }
 
             if (nodo.derecho) {
                 ctx.beginPath();
-                ctx.moveTo(x, y);
-                ctx.lineTo(x + offset, y + 60);
+                ctx.moveTo(x, y + circleRadius);
+                ctx.lineTo(x + offset, y + 100);
                 ctx.stroke();
-                dibujarNodo(ctx, nodo.derecho, x + offset, y + 60, offset / 2);
+                dibujarNodo(ctx, nodo.derecho, x + offset, y + 100, offset / 2);
             }
         }
 
-        window.onload = dibujarArbol;
+        document.addEventListener('DOMContentLoaded', function () {
+            dibujarArbol();
+        });
     </script>
 }
 
+<style>
+    .msg-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .msg {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        max-width: 1100px;
+        width: 50%;
+    }
+</style>
