@@ -101,40 +101,7 @@ namespace BSTWebApp.Controllers
 
             return RedirectToAction("Index", new { mensaje = $"Se ha eliminado la matrícula {matricula}." });
         }
-
-
-        // Acción para balancear el árbol
-        [HttpPost]
-        public ActionResult Balancear()
-        {
-            arbol.Balancear();
-            return RedirectToAction("Index", new { mensaje = "Se ha balanceado el árbol correctamente." });
-        }
-
-        // Acción para obtener el árbol como JSON (para la representación gráfica)
-        public JsonResult ObtenerArbol()
-        {
-            var datos = ObtenerDatosDelNodo(arbol.Raiz);
-            return Json(datos, JsonRequestBehavior.AllowGet);
-        }
-
-        // Método recursivo para obtener los datos del árbol para representación gráfica
-        private object ObtenerDatosDelNodo(Nodo<Datos> nodo)
-        {
-            if (nodo == null) return null;
-
-            return new
-            {
-                valor = new
-                {
-                    Fecha = nodo.Valor.Fecha.ToString("o"), // ISO 8601 format
-                    Matricula = nodo.Valor.Matricula,
-                    Asistencia = nodo.Valor.Asistencia ? "True" : "False" // Mostrar como "True" o "False"
-                },
-                izquierdo = ObtenerDatosDelNodo(nodo.Izquierdo),
-                derecho = ObtenerDatosDelNodo(nodo.Derecho)
-            };
-        }
+        
 
         // Método para obtener los recorridos del árbol
         private Dictionary<string, List<string>> ObtenerRecorridos()
@@ -171,6 +138,10 @@ namespace BSTWebApp.Controllers
             ViewBag.Records = ObtenerRecorridos();
             return View("Index");
         }
+
+
+
+
     }
 }
 
