@@ -139,7 +139,13 @@ namespace BSTWebApp.Controllers
             return View("Index");
         }
 
-
+        // Acción para balancear el árbol
+        [HttpPost]
+        public ActionResult Balancear()
+        {
+            arbol.Balancear();
+            return RedirectToAction("Index", new { mensaje = "Se ha balanceado el árbol correctamente." });
+        }
 
 
     }
