@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeLibrary", "BinarySearchTreeLibrary\BinarySearchTreeLibrary.csproj", "{24F62AB6-01D0-49E2-947F-4B5096B2E090}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSTWebApp", "BSTWebApp\BSTWebApp.csproj", "{57AF1C98-3D80-4D9D-903D-43667FF6C66C}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24F62AB6-01D0-49E2-947F-4B5096B2E090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24F62AB6-01D0-49E2-947F-4B5096B2E090}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24F62AB6-01D0-49E2-947F-4B5096B2E090}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24F62AB6-01D0-49E2-947F-4B5096B2E090}.Release|Any CPU.Build.0 = Release|Any CPU
 		{57AF1C98-3D80-4D9D-903D-43667FF6C66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{57AF1C98-3D80-4D9D-903D-43667FF6C66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57AF1C98-3D80-4D9D-903D-43667FF6C66C}.Release|Any CPU.ActiveCfg = Release|Any CPU

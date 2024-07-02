@@ -120,106 +120,94 @@ namespace BSTWebApp.Models
             return minv;
         }
 
-        public List<T> Inorden()
+        public List<T> InOrden()
         {
-            List<T> resultado = new List<T>();
-            InordenRecursivo(Raiz, resultado);
-            return resultado;
+            List<T> result = new List<T>();
+            InOrden(Raiz, result);
+            return result;
         }
 
-        private void InordenRecursivo(Nodo<T> nodo, List<T> resultado)
+        private void InOrden(Nodo<T> nodo, List<T> result)
         {
-            if (nodo != null)
-            {
-                InordenRecursivo(nodo.Izquierdo, resultado);
-                resultado.Add(nodo.Valor);
-                InordenRecursivo(nodo.Derecho, resultado);
-            }
+            if (nodo == null) return;
+            InOrden(nodo.Izquierdo, result);
+            result.Add(nodo.Valor);
+            InOrden(nodo.Derecho, result);
         }
 
-        public List<T> Preorden()
+        public List<T> PreOrden()
         {
-            List<T> resultado = new List<T>();
-            PreordenRecursivo(Raiz, resultado);
-            return resultado;
+            List<T> result = new List<T>();
+            PreOrden(Raiz, result);
+            return result;
         }
 
-        private void PreordenRecursivo(Nodo<T> nodo, List<T> resultado)
+        private void PreOrden(Nodo<T> nodo, List<T> result)
         {
-            if (nodo != null)
-            {
-                resultado.Add(nodo.Valor);
-                PreordenRecursivo(nodo.Izquierdo, resultado);
-                PreordenRecursivo(nodo.Derecho, resultado);
-            }
+            if (nodo == null) return;
+            result.Add(nodo.Valor);
+            PreOrden(nodo.Izquierdo, result);
+            PreOrden(nodo.Derecho, result);
         }
 
-        public List<T> Postorden()
+        public List<T> PostOrden()
         {
-            List<T> resultado = new List<T>();
-            PostordenRecursivo(Raiz, resultado);
-            return resultado;
+            List<T> result = new List<T>();
+            PostOrden(Raiz, result);
+            return result;
         }
 
-        private void PostordenRecursivo(Nodo<T> nodo, List<T> resultado)
+        private void PostOrden(Nodo<T> nodo, List<T> result)
         {
-            if (nodo != null)
-            {
-                PostordenRecursivo(nodo.Izquierdo, resultado);
-                PostordenRecursivo(nodo.Derecho, resultado);
-                resultado.Add(nodo.Valor);
-            }
+            if (nodo == null) return;
+            PostOrden(nodo.Izquierdo, result);
+            PostOrden(nodo.Derecho, result);
+            result.Add(nodo.Valor);
         }
 
-        public List<T> NivelOrden()
+        public List<T> RecorridoPorNiveles()
         {
-            List<T> resultado = new List<T>();
-            if (Raiz == null) return resultado;
-
+            List<T> result = new List<T>();
             Queue<Nodo<T>> queue = new Queue<Nodo<T>>();
-            queue.Enqueue(Raiz);
+            if (Raiz != null) queue.Enqueue(Raiz);
+
             while (queue.Count > 0)
             {
-                Nodo<T> temp = queue.Dequeue();
-                resultado.Add(temp.Valor);
+                Nodo<T> current = queue.Dequeue();
+                result.Add(current.Valor);
 
-                if (temp.Izquierdo != null)
-                {
-                    queue.Enqueue(temp.Izquierdo);
-                }
-
-                if (temp.Derecho != null)
-                {
-                    queue.Enqueue(temp.Derecho);
-                }
+                if (current.Izquierdo != null) queue.Enqueue(current.Izquierdo);
+                if (current.Derecho != null) queue.Enqueue(current.Derecho);
             }
-            return resultado;
+
+            return result;
         }
 
         public T Maximo()
         {
-            return MaximoRecursivo(Raiz);
-        }
-
-        private T MaximoRecursivo(Nodo<T> nodo)
-        {
-            T maxv = nodo.Valor;
-            while (nodo.Derecho != null)
+            if (Raiz == null) throw new InvalidOperationException("El árbol está vacío.");
+            Nodo<T> current = Raiz;
+            while (current.Derecho != null)
             {
-                maxv = nodo.Derecho.Valor;
-                nodo = nodo.Derecho;
+                current = current.Derecho;
             }
-            return maxv;
+            return current.Valor;
         }
 
         public T Minimo()
         {
-            return MinValor(Raiz);
+            if (Raiz == null) throw new InvalidOperationException("El árbol está vacío.");
+            Nodo<T> current = Raiz;
+            while (current.Izquierdo != null)
+            {
+                current = current.Izquierdo;
+            }
+            return current.Valor;
         }
 
         public void Balancear()
         {
-            List<T> valores = Inorden();
+            List<T> valores = InOrden();
             Raiz = BalancearRecursivo(valores, 0, valores.Count - 1);
         }
 
