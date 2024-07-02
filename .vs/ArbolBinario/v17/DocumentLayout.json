@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\ArbolBinario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\controllers\\arbolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\controllers\\arbolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\views\\arbol\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\views\\arbol\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\views\\arbol\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -19,16 +19,16 @@
       "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\models\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|C:\\ArbolBinario\\bstwebapp\\models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|c:\\arbolbinario\\bstwebapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57AF1C98-3D80-4D9D-903D-43667FF6C66C}|BSTWebApp\\BSTWebApp.csproj|solutionrelative:bstwebapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +43,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "BSTWebApp\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "BSTWebApp\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBIAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T03:16:18.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BSTWebApp\\Views\\Shared\\_Layout.cshtml",
@@ -63,7 +50,20 @@
               "RelativeToolTip": "BSTWebApp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T03:12:15.301Z",
+              "WhenOpened": "2024-07-02T03:59:53.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\ArbolBinario\\BSTWebApp\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "BSTWebApp\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "BSTWebApp\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T03:16:18.799Z",
               "EditorCaption": ""
             },
             {
@@ -113,7 +113,7 @@
               "RelativeDocumentMoniker": "BSTWebApp\\Views\\Arbol\\Index.cshtml",
               "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\Views\\Arbol\\Index.cshtml",
               "RelativeToolTip": "BSTWebApp\\Views\\Arbol\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPQAAAAIAAAA",
+              "ViewState": "AQIAANIAAAAAAAAAAAAYwPQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-29T02:12:46.492Z",
               "EditorCaption": ""
@@ -126,7 +126,7 @@
               "RelativeDocumentMoniker": "BSTWebApp\\Controllers\\ArbolController.cs",
               "ToolTip": "C:\\ArbolBinario\\BSTWebApp\\Controllers\\ArbolController.cs",
               "RelativeToolTip": "BSTWebApp\\Controllers\\ArbolController.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAqwJkAAAAAAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAqwJgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T02:11:56.425Z",
               "EditorCaption": ""

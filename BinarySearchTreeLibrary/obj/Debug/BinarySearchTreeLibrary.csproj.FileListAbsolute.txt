@@ -1,6 +1,0 @@
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\bin\Debug\BinarySearchTreeLibrary.dll
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\bin\Debug\BinarySearchTreeLibrary.pdb
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\obj\Debug\BinarySearchTreeLibrary.csproj.AssemblyReference.cache
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\obj\Debug\BinarySearchTreeLibrary.csproj.CoreCompileInputs.cache
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\obj\Debug\BinarySearchTreeLibrary.dll
-C:\ArbolBinario\ArbolBinario\BinarySearchTreeLibrary\obj\Debug\BinarySearchTreeLibrary.pdb

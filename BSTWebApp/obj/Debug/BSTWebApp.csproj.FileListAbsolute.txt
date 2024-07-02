@@ -51,7 +51,6 @@ C:\ArbolBinario\BSTWebApp\bin\roslyn\vbc.rsp
 C:\ArbolBinario\BSTWebApp\bin\roslyn\VBCSCompiler.exe
 C:\ArbolBinario\BSTWebApp\bin\roslyn\VBCSCompiler.exe.config
 C:\ArbolBinario\BSTWebApp\bin\Antlr3.Runtime.dll
-C:\ArbolBinario\BSTWebApp\bin\BinarySearchTreeLibrary.dll
 C:\ArbolBinario\BSTWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\ArbolBinario\BSTWebApp\bin\Microsoft.Web.Infrastructure.dll
 C:\ArbolBinario\BSTWebApp\bin\Newtonsoft.Json.dll
@@ -63,7 +62,6 @@ C:\ArbolBinario\BSTWebApp\bin\System.Web.WebPages.Deployment.dll
 C:\ArbolBinario\BSTWebApp\bin\System.Web.WebPages.dll
 C:\ArbolBinario\BSTWebApp\bin\System.Web.WebPages.Razor.dll
 C:\ArbolBinario\BSTWebApp\bin\WebGrease.dll
-C:\ArbolBinario\BSTWebApp\bin\BinarySearchTreeLibrary.pdb
 C:\ArbolBinario\BSTWebApp\bin\System.Web.Helpers.xml
 C:\ArbolBinario\BSTWebApp\bin\System.Web.Mvc.xml
 C:\ArbolBinario\BSTWebApp\bin\System.Web.Optimization.xml
